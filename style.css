@@ -1,0 +1,104 @@
+:root {
+    --background-color: #ffffff;
+    --text--: #0000;
+    --primary-color:#008080; 
+}
+body {
+    min-width: 500px;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h1{
+    font-size: 3rem;
+    text-align: center;
+    color: teal;
+}
+@media screen and (min-width: 768px){
+    header h1{
+        font-size: 4.5rem;
+    }
+    @media screen and (max-width: 768px){
+        header h1{
+            font-size: 3rem;
+        }
+    }
+}
+header nav{
+    display: none;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+@media screen and (min-width: 768px){
+    header nav{
+        font-size: 2.5rem;
+    }
+}
+header nav ul{
+    display: flex;
+
+}
+header nav ul li{
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+header nav ul li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+.menu{
+    margin-left: 400px;
+    margin-top: -90px;
+    cursor: pointer;
+}
+.menu span{
+    font-size: 3rem;
+}
+
+/* cards */
+main{
+    margin-left: 100px;
+
+}
+main section h1{
+    font-size: 2.5rem;
+    color: teal;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 50px;
+    cursor: pointer;
+}
+main section .Pu-results-card{
+    width: 300px;
+    height: 150px;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    cursor: pointer;
+}
+main section .Lg-results-card{
+    margin-top: 30px;
+    width: 300px;
+    height: 150px;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    cursor: pointer;
+}
+main section .Overall-results-card{
+    margin-top: 30px;
+
+    width: 300px;
+    height: 150px;
+    box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
+    cursor: pointer;
+}
+section h1{
+    font-size: 2rem
+}
+footer p{
+    text-align: center;
+    
+}
