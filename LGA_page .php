@@ -1,4 +1,4 @@
-<?php
+git branch -u origin/master<?php
 include 'database.php';
 ?>
 <!DOCTYPE html>
@@ -34,6 +34,7 @@ menu
                 <p>Local Government</p>
                 <select name="polling_unit" id="polling_unit">
                     <option value="polling_unit">Select Local Government</option>
+                    <option value="polling_unit">--select Polling unit--</option>
                     <?php
                         $sql = "SELECT * FROM `polling_unit`  ";
                         $result = mysqli_query($conn, $sql);

@@ -33,6 +33,7 @@ include 'database.php';
         <section>
             <hr>
             <div class="container">
+                <p>welcome to velatic</p>
 
                 <form method="post" action="">
                     <label for="polling_unit">Select Polling Unit:</label>
