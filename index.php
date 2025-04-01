@@ -1,45 +1,33 @@
-<?php
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
     <h1>Velastic</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Polling Unit Results</a></li>
-                <li><a href="#">Overall Results</a></li>
-                
-            </ul>
-        </nav>
-        <div class="menu">
-        <span class="material-symbols-outlined">
-menu
-</span>
-        </div>
     </header>
+    <hr>
 <main>
     <section>
-        <div class="Pu-results-card">
-        <h1> Polling Unit Results</h1>
+        <div class= "animate__animated animate__fadeInUp">
+        <div class="Pu-results-card" >
+        <a href="PU_page.php"><h1> Polling Unit Results</h1></a>
     </div>
 
     <div class="Lg-results-card">
-        <h1> LGA Results</h1>
+    <a href="LGA_page.php"><h1>LGA Results</h1></a>
     </div>
 
     <div class="Overall-results-card">
         <h1> Overall Results</h1>
     </div>
+        </div>
 </section>
 </main>    
 <footer>

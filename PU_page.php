@@ -7,7 +7,7 @@ include 'database.php';
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="PU_page.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polling Unit</title>
 </head>
@@ -15,28 +15,13 @@ include 'database.php';
 <body>
     <header>
         <h1>Velastic</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Polling Unit Results</a></li>
-                <li><a href="#">Overall Results</a></li>
-
-            </ul>
-        </nav>
-        <div class="menu">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </div>
     </header>
     <main>
         <section>
             <hr>
             <div class="container">
-                <p>welcome to velatic</p>
-
+            <h1>Polling units</h1>
                 <form method="post" action="">
-                    <label for="polling_unit">Select Polling Unit:</label>
                     <select name="polling_unit" id="polling_unit" onchange="this.form.submit()">
                         <option value="">-- Select Polling Unit --</option>
 
@@ -49,7 +34,7 @@ include 'database.php';
                         if ($result_units->num_rows > 0) {
                             while ($row = $result_units->fetch_assoc()) {
                                 $selected = ($selected_unit == $row['uniqueid']) ? 'selected' : '';
-                                echo "<option value='" . $row['uniqueid'] . "' " . $selected . ">" . $row['polling_unit_name'] . " - " . $row['polling_unit_name'] . "</option>";
+                                echo "<option value='" . $row['uniqueid'] . "' " . $selected . ">" . $row['polling_unit_name'] ."</option>";
                             }
                         }
                         ?>
@@ -74,7 +59,7 @@ include 'database.php';
                     $result_scores = $conn->query($sql_results);
 
                     if ($result_scores->num_rows > 0) {
-                        echo "<table>
+                        echo "<table class='animate__animated animate__fadeIn'>
                                         <tr>
                                             <th>Party</th>
                                             <th>Votes</th>
@@ -103,22 +88,19 @@ include 'database.php';
                 ?>
                 </select>
                 </form>
-                <!-- <form>
-                <select name="polling_unit" id="polling_unit">
-                    <option value="polling_unit">Select Polling Unit</option>
-                    <button type="submit" name="view">View results</button>
-                </select>
-                </form> -->
-
-
-
-
-
+            </div>
+            
                 <section>
                     <div class="display-table">
-                        <p><strong>Note:</strong> Select Polling units to view results</p>
+                        
                     </div>
                 </section>
+                <div class="display-table">
+                <p><strong>Note:</strong> Select Polling Unit to view results</p>
+                <p>Go <a href="index.php"> Home</a></p>
+                <p>Check Total LGA votes <a href="LGA_page.php"> Based on Polling Unit</a></p>
+                </div>
+
     </main>
     <footer>
         <p>&copy; 2025 Velastic</p>

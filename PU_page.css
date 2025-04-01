@@ -51,14 +51,6 @@ header nav ul li a{
     font-weight: 400;
     color: black;
 }
-.menu{
-    margin-left: 400px;
-    margin-top: -90px;
-    cursor: pointer;
-}
-.menu span{
-    font-size: 3rem;
-}
 /* Select-polling-unit  */
 section .container{
     box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.2);
@@ -69,9 +61,9 @@ section .container{
     justify-content: space-evenly;
     max-width: 1200px;
 }
-section .container p{
+section .container h1{
     color: teal;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 select{
@@ -96,6 +88,15 @@ th, td{
 th{
     background-color: teal;
     color: white;
+}
+.display-table p{
+    color: black;
+    margin-left: 10px;
+}
+.display-table p a{
+    color: teal;
+    text-decoration: underline;
+    font-weight: 600;
 }
 footer p{
     text-align: center;
